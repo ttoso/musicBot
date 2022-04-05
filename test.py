@@ -17,3 +17,5 @@ def getGenres(artistName):
 result = getGenres('rammstein')
 for genero in result:
     print(genero)
+
+
