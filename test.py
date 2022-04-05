@@ -2,6 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
 
+
 def getGenres(artistName):
     client_credentials_manager = SpotifyClientCredentials()
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
@@ -17,3 +18,5 @@ def getGenres(artistName):
 result = getGenres('rammstein')
 for genero in result:
     print(genero)
+
+
